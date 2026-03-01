@@ -164,15 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const firstSection = document.querySelector('.first');
 
     if (firstSection) {
-        // Vérifiez si nous sommes sur la page projects.html
-        if (window.location.pathname === '/projects.html') {
-            styleTag.innerHTML = `
-                .first::after {
-                    height: calc(${document.body.scrollHeight}px - 150px); /* Ajustez la hauteur ici */
-                }
-            `;
-        }
-        else if (window.location.pathname === '/contact.html' || window.location.pathname === '/privacy.html' || window.location.pathname === '/terms.html') {
+        if (window.location.pathname === '/contact.html' || window.location.pathname === '/privacy.html' || window.location.pathname === '/terms.html') {
             styleTag.innerHTML = `
                 .first::after {
                     height: calc(${document.body.scrollHeight}px - 150px); /* Ajustez la hauteur ici */

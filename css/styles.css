@@ -133,6 +133,7 @@ body {
     transform-origin: center bottom;
     position: none;
 }
+
 .cursor-help-message {
     position: fixed;
     bottom: 20px;
@@ -220,8 +221,8 @@ header {
 }
 
 header .nav {
-    width: 700px;
-    height: 85px;
+    width: 680px;
+    height: 65px;
     border-radius: 1000px;
     border: var(--main-color) solid 1px;
     background-color: var(--blur-bg-color);
@@ -284,7 +285,8 @@ header .project-nav {
     justify-content: right;
     align-items: center;
 }
-header .project-nav button{
+
+header .project-nav button {
     border-radius: 100px !important;
     height: calc(100% - 10px);
     transform: translateX(0) !important;
@@ -331,6 +333,7 @@ header i {
     background: #FFFAFA;
     background: radial-gradient(circle farthest-corner at bottom center, #FFFAFA 0%, #adadad 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -420,6 +423,7 @@ header i {
     transition: all 0.3s ease-in-out;
     max-height: 60px;
 }
+
 .button svg,
 .button i,
 .project svg,
@@ -430,6 +434,7 @@ header i {
     position: relative;
     filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
 }
+
 .button:hover svg,
 .button:hover i,
 .project:hover svg,
@@ -442,6 +447,7 @@ header i {
 .project span {
     position: relative;
     transition: all 0.3s ease-in-out;
+    white-space: nowrap;
 }
 
 .project:hover span {
@@ -870,15 +876,15 @@ header i {
     margin-bottom: 40px;
 }
 
-.third .contact-container button{
+.third .contact-container button {
     animation: scalvar 5s infinite;
 }
 
-.third .social-container svg{
+.third .social-container svg {
     filter: invert(1);
 }
 
-.third .social-container .button{
+.third .social-container .button {
     margin: 5px;
 }
 
@@ -900,20 +906,14 @@ header i {
 
 
 
-
 footer {
     width: calc(100% - 300px);
-    height: 380px;
-    background-color: var(--bg-color-alt);
-    border-inline: var(--main-color) solid 0.2px;
-    border-top: var(--main-color) solid 0.2px;
-    border-radius: 40px 40px 0 0;
+    height: 150px;
     z-index: 9 !important;
     position: relative;
     left: 50%;
-    bottom: -50px;
+    bottom: -20px;
     transform: translateX(-50%);
-    box-shadow: 0 -10px 10px var(--blur-bg-color);
 }
 
 .infoot {
@@ -1072,7 +1072,7 @@ footer {
 
     footer {
         width: calc(100% - 100px);
-        height: 410px;
+        height: 190px;
     }
 
     footer .menue {
@@ -1312,8 +1312,8 @@ footer {
         transform: translateX(-50%);
         margin: 0;
         padding: 0;
-        height: 500px;
-        margin-top: 170px;
+        height: 190px;
+        margin-top: 50px;
     }
 
     footer .infoot {
@@ -1397,19 +1397,23 @@ footer {
 }
 
 @keyframes scalvar {
-    0%{
+    0% {
         scale: 1.1;
     }
-    25%{
+
+    25% {
         scale: 1.15;
     }
-    50%{
+
+    50% {
         scale: 1.13;
     }
-    75%{
+
+    75% {
         scale: 1.2;
     }
-    100%{
+
+    100% {
         scale: 1.1;
     }
 }
